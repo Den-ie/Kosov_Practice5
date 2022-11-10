@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32819.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kosov_Practice5", "Kosov_Practice5\Kosov_Practice5.csproj", "{5EE258A9-CD9C-47C4-9D1A-DDC046DAF739}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5EE258A9-CD9C-47C4-9D1A-DDC046DAF739}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EE258A9-CD9C-47C4-9D1A-DDC046DAF739}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EE258A9-CD9C-47C4-9D1A-DDC046DAF739}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EE258A9-CD9C-47C4-9D1A-DDC046DAF739}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E8A4A1BA-B22C-4076-882B-17A195EDB608}
+	EndGlobalSection
+EndGlobal
