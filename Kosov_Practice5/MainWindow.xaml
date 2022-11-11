@@ -8,34 +8,59 @@
         Title="MainWindow" Height="450" Width="800">
 
     <Grid>
+
+        <Grid Margin="0,0,0,410">
+            <Menu Grid.ColumnSpan="2">
+                <MenuItem Header="О программе"
+                      Click="About"/>
+
+                <MenuItem Header="Выход"
+                      Click="Exit" Height="24"/>
+            </Menu>
+        </Grid>
+
         <TextBox x:Name="FValue"
-                 Margin="10,10,668,398"
+                 Margin="10,74,668,338"
                  />
+
         <TextBox x:Name="SValue"
-                 Margin="10,50,668,358"
+                 Margin="10,126,668,287"
                  />
 
         <TextBox x:Name="Answer"
-                 Margin="297,10,381,398"
+                 Margin="292,74,386,338"
                  />
 
         <TextBox x:Name="Answer2"
-                 Margin="297,50,381,358"
+                 Margin="292,126,386,287"
                  />
 
         <Button x:Name="Make"
-                Margin="150,10,533,398"
-                Content="Нажать1"
+                Margin="150,70,533,338"
+                Content="Создать 1 пару"
                 Click="Make_Click"/>
 
         <Button x:Name="Make2"
-                Margin="150,50,533,358"
-                Content="Нажать2"
+                Margin="150,121,533,287"
+                Content="Содать 2 пару"
                 Click="Make2_Click"/>
 
         <Button x:Name="Compare"
-                Margin="435,10,207,358"
+                Margin="437,70,205,287"
                 Content="Сравнить"
-                Click="Compare"/>
+                Click="Compare_Click"/>
+
+        <Label Content="Первая цифра пары"
+               Margin="5,45,650,365"/>
+
+        <Label Content="Вторая цифра пары"
+               Margin="5,96,650,313"/>
+
+        <Label Content="Первая пара"
+               Margin="290,45,378,365"/>
+
+        <Label Content="Вторая пара"
+               Margin="290,96,378,313"/>
+        
     </Grid>
 </Window>

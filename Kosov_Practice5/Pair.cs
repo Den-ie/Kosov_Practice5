@@ -35,12 +35,20 @@ namespace Kosov_Practice5
             }
         }
 
-        public bool PairCompare(Pair ParaOne, Pair ParaTwo)
+        public static bool PairCompare(Pair ParaOne, Pair ParaTwo)
         {
-            if (ParaOne.FirstValue + ParaOne.SecondValue > ParaTwo.FirstValue + ParaTwo.SecondValue)
+            if (ParaOne.FirstValue > ParaTwo.FirstValue)
                 return true;
-            else 
-                return false;
+            else
+               if (ParaOne.FirstValue == ParaTwo.FirstValue && ParaOne.SecondValue > ParaTwo.SecondValue)
+                return true;
+            else
+            return false;
+        }
+
+        public void SetParams(int value)
+        {
+            
         }
     }
 }

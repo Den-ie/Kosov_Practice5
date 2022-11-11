@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Configuration;
+using System.DirectoryServices.ActiveDirectory;
 using System.Linq;
 using System.Runtime.ExceptionServices;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -28,6 +30,19 @@ namespace Kosov_Practice5
             this.Height += 25;
         }
 
+        private void About(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Косов Даниил ИСП-34 \nПрактическая №5 \nCоздать класс Pair (пара чисел). Создать необходимые методы и свойства. \r\nОпределить метод сравнения пар: пара p1 больше пары р2, если (first.pl > first.р2) \r\nили (first.pl = first.р2) и (second.pl > second.р2). Создать перегруженные методы \r\nSetParams, для установки параметров объекта.");
+        }
+
+        private void Exit(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
+
+        Pair _para2 = new Pair(0,0);
+        Pair _para = new Pair(0,0);
+
         private void Make_Click(object sender, RoutedEventArgs e)
         {
             if (!int.TryParse(FValue.Text, out int First) & !int.TryParse(SValue.Text, out int Second))
@@ -36,10 +51,9 @@ namespace Kosov_Practice5
                 return;
             }
 
-            Pair Para = new Pair(First, Second);
+            _para = new Pair(First, Second);
 
-            Answer.Text = Convert.ToString(Para.FirstValue) + ", " + Convert.ToString(Para.SecondValue);
-
+            Answer.Text = Convert.ToString(_para.FirstValue) + ", " + Convert.ToString(_para.SecondValue);
         }
 
         private void Make2_Click(object sender, RoutedEventArgs e)
@@ -50,16 +64,17 @@ namespace Kosov_Practice5
                 return;
             }
 
-            Pair Para2 = new Pair(First, Second);
+            _para2 = new Pair(First, Second);
 
-            Answer.Text = Convert.ToString(Para2.FirstValue) + ", " + Convert.ToString(Para2.SecondValue);
-
-            Para2.PairCompare(Para2, Para2);
+            Answer2.Text = Convert.ToString(_para2.FirstValue) + ", " + Convert.ToString(_para2.SecondValue);
         }
 
-        private void Compare(object sender, RoutedEventArgs e)
+        private void Compare_Click(object sender, RoutedEventArgs e)
         {
-            //
+            if (Pair.PairCompare(_para, _para2))
+                MessageBox.Show("Первая пара больше");
+            else
+                MessageBox.Show("Первая пара не больше");
         }
     }
 }
