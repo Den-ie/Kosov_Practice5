@@ -48,7 +48,14 @@ namespace Kosov_Practice5
 
         public void SetParams(int value)
         {
-            
+            FirstValue = value;
+            SecondValue = value;
+        }
+        
+        public void SetParams(int FValue, int SValue)
+        {
+            FirstValue = FValue;
+            SecondValue = SValue;
         }
     }
 }

@@ -40,8 +40,8 @@ namespace Kosov_Practice5
             Close();
         }
 
-        Pair _para2 = new Pair(0,0);
-        Pair _para = new Pair(0,0);
+        Pair _para2 = new Pair(0, 0);
+        Pair _para = new Pair(0, 0);
 
         private void Make_Click(object sender, RoutedEventArgs e)
         {
@@ -75,6 +75,25 @@ namespace Kosov_Practice5
                 MessageBox.Show("Первая пара больше");
             else
                 MessageBox.Show("Первая пара не больше");
+        }
+
+        private void CangeFPar(object sender, RoutedEventArgs e)
+        {
+            if (ChangeExtra.Text == "")
+            {
+                if (!int.TryParse(Change.Text, out int x))
+                {
+                    MessageBox.Show("Введите корректные значения");
+                    return;
+                }
+                _para.SetParams(Convert.ToInt32(x));
+                Answer.Text = Convert.ToString(_para.FirstValue) + ", " + Convert.ToString(_para.SecondValue);
+            }
+            else
+            {
+                _para.SetParams(Convert.ToInt32(Change.Text), Convert.ToInt32(ChangeExtra.Text));
+                Answer.Text = Convert.ToString(_para.FirstValue) + ", " + Convert.ToString(_para.SecondValue);
+            }
         }
     }
 }

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Kosov_Practice5"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" ResizeMode="CanMinimize">
 
     <Grid>
 
@@ -61,6 +61,15 @@
 
         <Label Content="Вторая пара"
                Margin="290,96,378,313"/>
-        
+
+        <Button Content="Изменить первую пару"
+                Click="CangeFPar"
+                Margin="254,170,386,190"/>
+
+        <TextBox x:Name="ChangeExtra"
+                 Margin="10,223,560,190" />
+
+        <TextBox x:Name="Change"
+                 Margin="10,183,560,230" />
     </Grid>
 </Window>
