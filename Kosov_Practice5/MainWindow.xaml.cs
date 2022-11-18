@@ -53,7 +53,7 @@ namespace Kosov_Practice5
 
             _para = new Pair(First, Second);
 
-            Answer.Text = Convert.ToString(_para.FirstValue) + ", " + Convert.ToString(_para.SecondValue);
+            Answer.Text = Convert.ToString(_para._firstvalue) + ", " + Convert.ToString(_para._secondvalue);
         }
 
         private void Make2_Click(object sender, RoutedEventArgs e)
@@ -66,7 +66,7 @@ namespace Kosov_Practice5
 
             _para2 = new Pair(First, Second);
 
-            Answer2.Text = Convert.ToString(_para2.FirstValue) + ", " + Convert.ToString(_para2.SecondValue);
+            Answer2.Text = Convert.ToString(_para2._firstvalue) + ", " + Convert.ToString(_para2._secondvalue);
         }
 
         private void Compare_Click(object sender, RoutedEventArgs e)
@@ -92,12 +92,12 @@ namespace Kosov_Practice5
                     return;
                 }
                 _para.SetParams(Convert.ToInt32(x));
-                Answer.Text = Convert.ToString(_para.FirstValue) + ", " + Convert.ToString(_para.SecondValue);
+                Answer.Text = Convert.ToString(_para._firstvalue) + ", " + Convert.ToString(_para._secondvalue);
             }
             else
             {
                 _para.SetParams(Convert.ToInt32(Change.Text), Convert.ToInt32(ChangeExtra.Text));
-                Answer.Text = Convert.ToString(_para.FirstValue) + ", " + Convert.ToString(_para.SecondValue);
+                Answer.Text = Convert.ToString(_para._firstvalue) + ", " + Convert.ToString(_para._secondvalue);
             }
         }
     }

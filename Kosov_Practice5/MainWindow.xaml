@@ -28,11 +28,11 @@
                  />
 
         <TextBox x:Name="Answer"
-                 Margin="292,74,386,338"
+                 Margin="292,74,386,338" IsEnabled="False"
                  />
 
         <TextBox x:Name="Answer2"
-                 Margin="292,126,386,287"
+                 Margin="292,126,386,287" IsEnabled="False"
                  />
 
         <Button x:Name="Make"
