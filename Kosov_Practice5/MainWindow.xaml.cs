@@ -71,10 +71,15 @@ namespace Kosov_Practice5
 
         private void Compare_Click(object sender, RoutedEventArgs e)
         {
-            if (Pair.PairCompare(_para, _para2))
-                MessageBox.Show("Первая пара больше");
+            if (Answer.Text == "" || Answer2.Text == "")
+                MessageBox.Show("Создайте пары для сравнения");
             else
-                MessageBox.Show("Первая пара не больше");
+            {
+                if (Pair.PairCompare(_para, _para2))
+                    MessageBox.Show("Первая пара больше");
+                else
+                    MessageBox.Show("Первая пара не больше");
+            }
         }
 
         private void CangeFPar(object sender, RoutedEventArgs e)
