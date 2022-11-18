@@ -43,7 +43,7 @@ namespace Kosov_Practice5
                if (ParaOne.FirstValue == ParaTwo.FirstValue && ParaOne.SecondValue > ParaTwo.SecondValue)
                 return true;
             else
-            return false;
+                return false;
         }
 
         public void SetParams(int value)
@@ -51,7 +51,7 @@ namespace Kosov_Practice5
             FirstValue = value;
             SecondValue = value;
         }
-        
+
         public void SetParams(int FValue, int SValue)
         {
             FirstValue = FValue;
