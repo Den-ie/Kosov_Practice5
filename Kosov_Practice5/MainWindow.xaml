@@ -46,9 +46,14 @@
                 Click="Make2_Click"/>
 
         <Button x:Name="Compare"
-                Margin="437,70,205,287"
-                Content="Сравнить"
+                Margin="437,40,205,317"
+                Content="Сравнить методом"
                 Click="Compare_Click"/>
+        
+        <Button x:Name="CompareOperator"
+                Margin="437,127,205,230"
+                Content="Сравнить оператором"
+                Click="CompareOp_Click"/>
 
         <Label Content="Первая цифра пары"
                Margin="5,45,650,365"/>

@@ -57,5 +57,21 @@ namespace Kosov_Practice5
             FirstValue = FValue;
             SecondValue = SValue;
         }
+
+        public static bool operator >(Pair First, Pair Second)
+        {
+            if (First.FirstValue + First.SecondValue > Second.FirstValue + Second.SecondValue)
+                return true;
+            else
+                return false;
+        }  
+        
+        public static bool operator <(Pair First, Pair Second)
+        {
+            if (First.FirstValue + First.SecondValue < Second.FirstValue + Second.SecondValue)
+                return true;
+            else
+                return false;
+        }
     }
 }

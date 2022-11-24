@@ -100,5 +100,18 @@ namespace Kosov_Practice5
                 Answer.Text = Convert.ToString(_para.FirstValue) + ", " + Convert.ToString(_para.SecondValue);
             }
         }
+
+        private void CompareOp_Click(object sender, RoutedEventArgs e)
+        {
+            if (Answer.Text == "" || Answer2.Text == "")
+                MessageBox.Show("Создайте пары для сравнения");
+            else
+            {
+                if (_para > _para2)
+                    MessageBox.Show("Первая пара больше");
+                else
+                    MessageBox.Show("Первая пара не больше");
+            }
+        }
     }
 }
