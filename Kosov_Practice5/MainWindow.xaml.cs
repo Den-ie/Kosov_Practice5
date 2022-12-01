@@ -42,6 +42,7 @@ namespace Kosov_Practice5
 
         Pair _para2 = new Pair(0, 0);
         Pair _para = new Pair(0, 0);
+        Fraction fara = new Fraction(0, 0);
 
         private void Make_Click(object sender, RoutedEventArgs e)
         {
@@ -50,8 +51,6 @@ namespace Kosov_Practice5
                 MessageBox.Show("Введите пару чисел", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
                 return;
             }
-
-            _para = new Pair(First, Second);
 
             Answer.Text = Convert.ToString(_para.FirstValue) + ", " + Convert.ToString(_para.SecondValue);
         }
@@ -64,9 +63,11 @@ namespace Kosov_Practice5
                 return;
             }
 
-            _para2 = new Pair(First, Second);
+            fara = new Fraction(First, Second);
+            //_para2 = new Pair(First, Second);
 
-            Answer2.Text = Convert.ToString(_para2.FirstValue) + ", " + Convert.ToString(_para2.SecondValue);
+            //Answer2.Text = Convert.ToString(_para2.FirstValue) + ", " + Convert.ToString(_para2.SecondValue);
+            Answer2.Text = Convert.ToString(fara.Rubles) + ", " + Convert.ToString(fara.Copes);
         }
 
         private void Compare_Click(object sender, RoutedEventArgs e)

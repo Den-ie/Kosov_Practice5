@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Kosov_Practice5
 {
-    internal class Pair
+    class Pair
     {
         private int _firstValue;
         private int _secondValue;
